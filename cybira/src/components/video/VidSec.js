@@ -15,6 +15,7 @@ function VideoSection({ heading, subHeading, description, videoSrc, link, childr
             <p style={{ textAlign: 'justify', fontSize: '0.8rem'}} className='mb-lg-3 mt-lg-3'>
              {children}
             </p>
+            
             <a href={link}>
               <b>Learn more → </b>
             </a>
