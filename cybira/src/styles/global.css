@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+:root {
+    --body-color: black !important;
+    --text-color: #ffffff !important;
+    --text-purple: #8854FC !important;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #303030;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+html {
+    scroll-behavior: smooth;
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/* NAVBAR DESIGN */
+    nav{
+        background-color: var(--body-color) !important;
+    }
+    .navbar-nav {
+        gap: 1.5rem;
+    }
+    .navbar-brand {
+        font-size: 2.5rem;
+        font-family: 'Arial', sans-serif;
+    }
+    .nav-link {
+        position: relative;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        font-size: small;
+    }
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 2px;
+        background-color: #8854FC;
+        transition: width 0.3s ease-in-out;
+    }
+    .nav-link:hover::after {
+        width: 100%;
+    }
+    .btn-sm i {
+        font-size: 1.2rem;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+/* NAVBAR DESIGN */
+/* LANGDING PAGE SECTION */
+    .left-section {
+        padding: 2rem;
+    }
+    .left-section a,
+    .btn-view-all {
+        color: white;
+        text-decoration: none;
+        border-bottom: 2px solid var(--text-purple);
+        padding-bottom: 2px;
+        font-size: 1rem;
+    }
+    .right-section {
+        position: relative !important;
+        overflow: hidden !important;
+    }
+    .right-section video {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    .transparent-purple-block {
+        background-color: #8954fcc0;
+    }
+    .purple-block {
+        background-color: #8854FC;
+    }
+    .button-block {
+        background-color: #8854FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 200%;
+    }
+    .black-block {
+        background-color: black;
+    }
+    .transparent-block-blue {
+        background-color: #36367f62;
+    }
+    .blue-block {
+        background-color: #3C3286;
+    }
+/* LANGDING PAGE SECTION */
+
+/* CAROUSEL & CARD DESIGN */
+    .card-carousel {
+        border-radius: 1px !important;
+        overflow: hidden !important;
+        background-color: var(--body-color) !important;
+        color: var(--text-color) !important;
+    }
+    .carousel-cell {
+        width: 350px !important;
+        cursor: pointer !important;
+        margin-right: 3% !important;
+    }
+    .read-more-btn {
+        text-decoration: none !important;
+        color: inherit !important;
+        display: inline-block !important;
+        transition: transform 0.3s ease, color 0.3s ease !important;
+    }
+    .card-title b {
+        border-bottom: 2px solid var(--text-purple) !important;
+    }
+    .main-carousel{
+        margin: 4% !important;
+    }
+/* CAROUSEL & CARD DESIGN */
+@media (min-width: 1200px) {
+    .color-blocks {
+        width: 100% !important;
+        height: 100% !important;
+        grid-template-columns: repeat(10, 1fr) !important;
+        grid-template-rows: repeat(6, 1fr) !important;
+        position: absolute;
+        top: 0;
+        display: grid;
+        padding-bottom: 1% !important;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {   
+    .color-blocks {
+        width: 100% !important;
+        height: 100% !important;
+        grid-template-columns: repeat(10, 1fr) !important;
+        grid-template-rows: repeat(6, 1fr) !important;
+        position: absolute !important;
+        top: 0 !important;
+        display: grid !important;
+        padding-bottom: 1.5% !important;
+    }
+    .color-block {
+        height: 51px !important;
+    }
+}
+@media (max-width: 424px) {
+    .navbar-brand{
+        padding: 1rem !important; 
+    }   
+    .main-carousel{
+        margin: 7% !important;
+    }
+    .insights-header, .btn-view-all {
+        padding-bottom: 7px;
+        font-size: 0.8rem;
+        padding: 10px !important;
+    }
+}
