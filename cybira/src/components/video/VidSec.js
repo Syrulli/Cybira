@@ -114,9 +114,6 @@ function VideoSection({ heading, subHeading, description, videoSrc, link, childr
                 <span className='color-block'></span>
                 <span
                   className='color-block black-block'
-                  data-aos='zoom-in'
-                  data-aos-duration='1000'
-                  data-aos-delay='1900'
                 ></span>
                 <span
                   className='color-block button-block'

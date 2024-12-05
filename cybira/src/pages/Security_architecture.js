@@ -13,9 +13,6 @@ function SecuriryArchitecture() {
         description=''
         videoSrc='/vid/video-3.mp4'
         link='/'
-        data-aos='zoom-in'
-        data-aos-duration='1000'
-        data-aos-delay='1900'
       >
         <ul className='ps-lg-3' style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
           <li>Zero Trust Architecture</li>

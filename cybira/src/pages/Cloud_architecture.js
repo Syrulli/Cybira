@@ -12,9 +12,6 @@ function CloudArchitecture() {
         description='“Transformative Enterprise Technology Solutions in the areas of: Digital Transformation, Cloud Migration and Infrastructure Modernization”.'
         videoSrc='/vid/video-2.mp4'
         link='/'
-        data-aos='zoom-in'
-        data-aos-duration='1000'
-        data-aos-delay='1900'
       >
         <ul className='ps-lg-3' style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
           <li>Creation of blueprints for cloud infrastructure that meets business requirements including

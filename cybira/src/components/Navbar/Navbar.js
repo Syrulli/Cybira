@@ -48,30 +48,39 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item mt-lg-2'>
-              <a className='nav-link position-relative text-white' href='/'>
+              <Link
+                className='nav-link position-relative text-white'
+                to='/Devops'
+              >
                 DevOps
                 <small>
                   <i className='fa-solid fa-chevron-down ms-lg-1'></i>
                 </small>
-              </a>
+              </Link>
             </li>
             <li className='nav-item mt-lg-2'>
-              <a className='nav-link position-relative text-white' href='/'>
+              <Link
+                className='nav-link position-relative text-white'
+                to='/WebDev'
+              >
                 Web Development
-                <small>
-                  <i className='fa-solid fa-chevron-down ms-lg-1'></i>
-                </small>
-              </a>
+              </Link>
             </li>
             <li className='nav-item mt-lg-2'>
-              <a className='nav-link position-relative text-white' href='/'>
+              <Link
+                className='nav-link position-relative text-white'
+                to='/DigitalMarketing'
+              >
                 Digital Marketing
-              </a>
+              </Link>
             </li>
             <li className='nav-item mt-lg-2'>
-              <a className='nav-link position-relative text-white' href='/'>
+              <Link
+                className='nav-link position-relative text-white'
+                to='/MedicalCoding'
+              >
                 Medical Coding
-              </a>
+              </Link>
             </li>
             <div className='d-flex align-items-center mt-lg-1 ps-lg-5 ms-lg-4'>
               <form className='me-2' role='search'>
